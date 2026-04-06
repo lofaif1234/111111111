@@ -1,12 +1,17 @@
-# Block all source code and sensitive data
+# Block everything by default
 *
+
+# EXCEPT these folders and files
 !obfuscated/
+!obfuscated/**
 !.gitignore
 !README.md
 
-# Block secrets and DB specifically (backup safety)
+# Specific safety overrides (NEVER push these)
 .env
 noka_users.db
+backend.py
+obfuscator.py
 __pycache__/
 *.pyc
 .git/
