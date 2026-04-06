@@ -1,0 +1,13 @@
+# Block all source code and sensitive data
+*
+!obfuscated/
+!.gitignore
+!README.md
+
+# Block secrets and DB specifically (backup safety)
+.env
+noka_users.db
+__pycache__/
+*.pyc
+.git/
+node_modules/
